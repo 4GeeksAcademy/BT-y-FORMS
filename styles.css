@@ -1,0 +1,12 @@
+.title {
+    font-size: larger;
+    
+}
+.missing{
+    color: rgb(146, 53, 53);
+    background-color: rgb(220, 137, 137);
+}
+
+.note {
+    font-size: x-small;
+}
