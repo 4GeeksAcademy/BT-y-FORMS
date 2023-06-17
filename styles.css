@@ -1,5 +1,7 @@
 .title {
-    font-size: larger;
+    font-size:x-large;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
     
 }
 .missing{
@@ -9,4 +11,14 @@
 
 .note {
     font-size: x-small;
+}
+
+.margengris{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.missing{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
 }

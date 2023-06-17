@@ -21,26 +21,26 @@
 <body>
     
 
-    <div class="container-fluid border border-primary">
+    <div class="container-fluid border border-secondary">
     <div class="row">  
     <div class="col-md-12">
-            <div class="col-md-12 bg-secondary title"><b>Payment form example</b></div>
-                <div class="col-md-12 border border-primary missing"><b>Some fields are missing</b></div>
+            <div class="col-md-12 bg-secondary border border-secondary title"><b>Payment form example</b></div>
+                <div class="col-md-12 missing missing"><b>Some fields are missing</b></div>
                 <div class="col-md-12">   
             <div class="row">
-                <div class="col-md-5 border border-primary">
+                <div class="col-md-5">
                     <label for="basic-url" class="form-label">Card#</label>
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="xxxxxxxxxxxxxx" aria-label="xxxxxxxxxxxxxx" aria-describedby="basic-addon1">
                     </div>
                 </div>
-                  <div class="col-md-3 border border-primary">
+                  <div class="col-md-3">
                     <label for="basic-url" class="form-label">CVC#</label>
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="0000" aria-label="0000" aria-describedby="basic-addon1">
                     </div> 
                 </div>
-                  <div class="col-md-4 border border-primary">
+                  <div class="col-md-4">
                     <label for="basic-url" class="form-label">Amount</label>
                     <div class="input-group mb-3">
                         <span class="input-group-text">$</span>
@@ -50,44 +50,48 @@
                 </div>
             </div>
             <div class="row">  
-                <div class="col-md-6 border border-primary">
-                    <div class="col-md-12 border border-primary">
+                <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="basic-url" class="form-label">First Name</label>
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                         </div>
                     </div>
-                    <div class="col-md-12 border border-primary">
+                    <div class="col-md-12">
                         <label for="basic-url" class="form-label">City</label>
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                     </div>
                     </div>
-                    <div class="col-md-6 border border-primary">
+                    <div class="col-md-6">
                         <label for="basic-url" class="form-label w-100">We Accept</label>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                            <label class="form-check-label" for="inlineRadio1">1</label>
+                            <label class="form-check-label" for="inlineRadio1"><i class="fa-solid fa-credit-card"></i></label>
                           </div>
                           <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                            <label class="form-check-label" for="inlineRadio2">2</label>
+                            <label class="form-check-label" for="inlineRadio2"><i class="fa-regular fa-address-card"></i></label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
-                            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                            <label class="form-check-label" for="inlineRadio3"><i class="fa-solid fa-id-card"></i></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                            <label class="form-check-label" for="inlineRadio3"><i class="fa-solid fa-id-card"></i></label>
                           </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 border border-primary">
-                    <div class="col-md-12 border border-primary">
+                <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="basic-url" class="form-label">Last Name</label>
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                     </div>
                     <div class="row">
-                    <div class="col-md-6 border border-primary">
+                    <div class="col-md-6">
                         <label for="exampleDataList" class="form-label">State</label>
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Pick a State</option>
@@ -96,13 +100,13 @@
                             <option value="3">Texas</option>
                           </select>
                     </div>
-                        <div class="col-md-6 border border-primary">
+                        <div class="col-md-6">
                             <label for="basic-url" class="form-label">Postal Code</label>
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                         </div>
                     </div> 
-                    <div class="col-md-12 border border-primary">
+                    <div class="col-md-12">
                         <label for="basic-url" class="form-label">Messaje</label>
                         <div class="input-group">
                             <textarea class="form-control" aria-label="With textarea"></textarea>
@@ -114,8 +118,11 @@
                
     </div>
     </div>      
-    <div class="col-md-12 border border-primary">
-        Columna </div>
+    <div class="col-md-12 d-flex flex-row-reverse">
+        <button type="button" class="btn btn-secondary margengris">Cancel</button>
+        <button type="button" class="btn btn-primary">Send</button>
+    
+    </div>
     </div>
     </div>
     
